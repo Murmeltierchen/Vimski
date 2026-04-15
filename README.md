@@ -36,6 +36,7 @@ Default bind for `Leader`: `Space`
 ### Using Ctrl
 
 - `Ctrl + <Up/Down>` - Navigate 10 lines up/down
+- `Ctrl + <1/2/3/4>` - Open saved harpoon file
 - `Ctrl + Space` - Open selection for previous files
 - `Ctrl + Backspace` - Delete word in front of cursor
 - `Ctrl + Delete` - Delete word after cursor
@@ -43,6 +44,7 @@ Default bind for `Leader`: `Space`
 - `Ctrl + ,` - Toggle Claude Code
 - `Ctrl + 0` - Toggle terminal
 - `Ctrl + b` - Toggle background transparency
+- `Ctrl + e` - Open harpoon list
 - `Ctrl + g` - Open live grep
 - `Ctrl + n` - Focus file tree
 - `Ctrl + p` - Search git files
@@ -52,11 +54,13 @@ Default bind for `Leader`: `Space`
 ### Using Shift and Ctrl
 
 - `Ctrl + Shift + <Up/Down>` - Move line up/down
+- `Ctrl + Shift + <p/n>` - Open previous/next harpoon file
 
 ### Using Leader
 
 - `Leader` - Show all `Leader` keybinds
 - `Leader -> Leader` - Open selection for files in buffer
+- `Leader -> a` - Add file to harpoon list
 - `Leader -> b` - Toggle git blame
 - `Leader -> d` - Show definitions
 - `Leader -> h` - Show hovered git changes
