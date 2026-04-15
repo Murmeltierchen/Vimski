@@ -8,6 +8,7 @@ A custom Neovim config
 - Some terminal with true color support (for example [kitty](https://github.com/kovidgoyal/kitty))
 - Some Nerd-Font
 - [tmux](https://github.com/tmux/tmux)
+- [ImageMagick](https://github.com/ImageMagick/ImageMagick)
 
 ## Installation
 
