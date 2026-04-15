@@ -36,6 +36,7 @@ Default bind for `Leader`: `Space`
 ### Using Ctrl
 
 - `Ctrl + <Up/Down>` - Navigate 10 lines up/down
+- `Ctrl + Space` - Open selection for previous files
 - `Ctrl + Backspace` - Delete word in front of cursor
 - `Ctrl + Delete` - Delete word after cursor
 - `Ctrl + Tab` - Indent current line
@@ -44,7 +45,7 @@ Default bind for `Leader`: `Space`
 - `Ctrl + b` - Toggle background transparency
 - `Ctrl + g` - Open live grep
 - `Ctrl + n` - Focus file tree
-- `Ctrl + p` - Open file search
+- `Ctrl + p` - Search git files
 - `Ctrl + s` - Format file
 - `Ctrl + t` - Show TODOs
 
@@ -55,7 +56,7 @@ Default bind for `Leader`: `Space`
 ### Using Leader
 
 - `Leader` - Show all `Leader` keybinds
-- `Leader -> Leader` - Open previous files selection
+- `Leader -> Leader` - Open selection for files in buffer
 - `Leader -> b` - Toggle git blame
 - `Leader -> d` - Show definitions
 - `Leader -> h` - Show hovered git changes
