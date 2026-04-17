@@ -27,6 +27,6 @@ return {
     },
 
     config = function()
-        vim.keymap.set("n", "<C-s>", vim.lsp.buf.format, {})
+        vim.keymap.set({ "n", "i", "v" }, "<C-s>", vim.lsp.buf.format, {})
     end
 }
