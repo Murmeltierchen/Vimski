@@ -44,6 +44,7 @@ Default bind for `Leader`: `Space`
 - `Ctrl + ,` - Toggle Claude Code
 - `Ctrl + 0` - Toggle terminal
 - `Ctrl + b` - Toggle background transparency
+- `Ctrl + d` - Remove entry from harpoon list
 - `Ctrl + e` - Open harpoon list
 - `Ctrl + g` - Open live grep
 - `Ctrl + n` - Focus file tree
