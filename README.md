@@ -43,6 +43,7 @@ Default bind for `Leader`: `Space`
 - `Ctrl + Tab` - Indent current line
 - `Ctrl + ,` - Toggle Claude Code
 - `Ctrl + 0` - Toggle terminal
+- `Ctrl + a` - Send file/selection to Claude Code
 - `Ctrl + b` - Toggle background transparency
 - `Ctrl + d` - Remove entry from harpoon list
 - `Ctrl + e` - Open harpoon list
