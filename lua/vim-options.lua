@@ -7,7 +7,6 @@ vim.g.background = "dark"
 
 vim.opt.swapfile = false
 vim.opt.number = true
-vim.opt.relativenumber = true
 
 vim.keymap.set("i", "<C-H>", "<C-w>")
 vim.keymap.set("i", "<C-BS>", "<C-w>")
@@ -27,4 +26,3 @@ vim.keymap.set("n", "<S-Right>", ":wincmd l<CR>")
 vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit Terminal Mode" })
 
 vim.keymap.set("n", "<leader>s", ":nohlsearch<CR>")
-vim.wo.number = true
