@@ -23,6 +23,11 @@ vim.keymap.set("n", "<S-Down>", ":wincmd j<CR>")
 vim.keymap.set("n", "<S-Left>", ":wincmd h<CR>")
 vim.keymap.set("n", "<S-Right>", ":wincmd l<CR>")
 
+vim.keymap.set({ "n", "i", "v" }, "<C-,>", ":CodeCompanionCLI<CR>")
+vim.keymap.set({ "n", "i", "v" }, "<C-a>", function()
+	return require("codecompanion").cli("#{this}", { focus = false })
+end)
+
 vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit Terminal Mode" })
 
 vim.keymap.set("n", "<leader>s", ":nohlsearch<CR>")

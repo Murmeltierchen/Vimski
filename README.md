@@ -41,9 +41,9 @@ Default bind for `Leader`: `Space`
 - `Ctrl + Backspace` - Delete word in front of cursor
 - `Ctrl + Delete` - Delete word after cursor
 - `Ctrl + Tab` - Indent current line
-- `Ctrl + ,` - Toggle Claude Code
+- `Ctrl + ,` - Open new AI split
 - `Ctrl + 0` - Toggle terminal
-- `Ctrl + a` - Send file/selection to Claude Code
+- `Ctrl + a` - Send file/selection to AI
 - `Ctrl + b` - Toggle background transparency
 - `Ctrl + d` - Remove entry from harpoon list
 - `Ctrl + e` - Open harpoon list
