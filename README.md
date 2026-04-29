@@ -36,13 +36,14 @@ Default bind for `Leader`: `Space`
 ### Using Ctrl
 
 - `Ctrl + <Up/Down>` - Navigate 10 lines up/down
-- `Ctrl + <1/2/3/4>` - Open saved harpoon file
+- `Ctrl + <0..9>` - Open terminal with ID
 - `Ctrl + Space` - Open selection for previous files
 - `Ctrl + Backspace` - Delete word in front of cursor
 - `Ctrl + Delete` - Delete word after cursor
+- `Ctrl + Enter` - Toggle open terminal
 - `Ctrl + Tab` - Indent current line
+- `Ctrl + #` - Open selection of running terminals
 - `Ctrl + ,` - Open new AI split
-- `Ctrl + 0` - Toggle terminal
 - `Ctrl + a` - Send file/selection to AI
 - `Ctrl + b` - Toggle background transparency
 - `Ctrl + d` - Remove entry from harpoon list
@@ -50,6 +51,7 @@ Default bind for `Leader`: `Space`
 - `Ctrl + g` - Open live grep
 - `Ctrl + n` - Focus file tree
 - `Ctrl + p` - Search git files
+- `Ctrl + r` - Rename running terminal
 - `Ctrl + s` - Format file
 - `Ctrl + t` - Show TODOs
 
