@@ -7,6 +7,7 @@ vim.g.background = "dark"
 
 vim.opt.swapfile = false
 vim.opt.number = true
+vim.opt.scrolloff = 10
 
 vim.keymap.set("i", "<C-H>", "<C-w>")
 vim.keymap.set("i", "<C-BS>", "<C-w>")
