@@ -12,8 +12,12 @@ return {
         opts = {
             auto_install = true,
             ensure_installed = {
-                "eslint",
+                "delve",
                 "eslint_d",
+                "gofumpt",
+                "goimports",
+                "golangci-lint",
+                "gopls",
                 "html",
                 "lua_ls",
                 "prettierd",
