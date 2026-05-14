@@ -3,7 +3,7 @@ return {
     opts = {
         formatters_by_ft = {
             css = { "prettierd" },
-            go = { "goimports", "gofumpt" },
+            go = { "goimports-reviser", "gofumpt" },
             graphql = { "prettierd" },
             html = { "prettierd" },
             javascript = { "prettierd" },
@@ -23,10 +23,6 @@ return {
         format_on_save = {
             timeout_ms = 500,
             lsp_fallback = true,
-        },
-    },
-
-    config = function()
-        vim.keymap.set({ "n", "i", "v" }, "<C-s>", vim.lsp.buf.format, {})
-    end
+        }
+    }
 }

@@ -15,7 +15,7 @@ return {
                 "delve",
                 "eslint_d",
                 "gofumpt",
-                "goimports",
+                "goimports-reviser",
                 "golangci-lint",
                 "gopls",
                 "html",
