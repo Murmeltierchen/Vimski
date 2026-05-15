@@ -1,22 +1,30 @@
 return {
-    "xiyaowong/transparent.nvim",
-    lazy = false,
-    config = function()
-        require("transparent").setup({
-            extra_groups = {
-                "NormalFloat",
-                "FloatBorder",
+	"xiyaowong/transparent.nvim",
+	lazy = false,
+	config = function()
+		require("transparent").setup({
+			extra_groups = {
+				"CursorLine",
+				"FloatBorder",
+				"NormalFloat",
+				"VertSplit",
+				"WinSeparator",
 
-                "NeoTreeNormal",
+				"NeoTreeCursorLine",
+				"NeoTreeEndOfBuffer",
+				"NeoTreeIndentMarker",
+				"NeoTreeNormal",
+				"NeoTreeNormalNC",
+				"NeoTreeWinSeparator",
 
-                "BlinkCmpMenu",
-                "BlinkCmpMenuBorder",
-                "BlinkCmpDoc",
-                "BlinkCmpDocBorder",
-                "BlinkCmpSignatureHelp",
-                "BlinkCmpSignatureHelpBorder",
-            },
-            vim.keymap.set("n", "<C-b>", ":TransparentToggle<CR>", {}),
-        })
-    end,
+				"BlinkCmpDoc",
+				"BlinkCmpDocBorder",
+				"BlinkCmpMenu",
+				"BlinkCmpMenuBorder",
+				"BlinkCmpSignatureHelp",
+				"BlinkCmpSignatureHelpBorder",
+			},
+			vim.keymap.set("n", "<C-b>", ":TransparentToggle<CR>", {}),
+		})
+	end,
 }

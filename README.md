@@ -40,7 +40,7 @@ Default bind for `Leader`: `Space`
 - `Ctrl + Space` - Open selection for previous files
 - `Ctrl + Backspace` - Delete word in front of cursor
 - `Ctrl + Delete` - Delete word after cursor
-- `Ctrl + Enter` - Toggle open terminal
+- `Ctrl + Enter` - Select colorscheme
 - `Ctrl + Tab` - Indent current line
 - `Ctrl + #` - Open selection of running terminals
 - `Ctrl + ,` - Open new AI split

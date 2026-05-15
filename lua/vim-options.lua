@@ -8,6 +8,7 @@ vim.g.background = "dark"
 vim.opt.swapfile = false
 vim.opt.number = true
 vim.opt.scrolloff = 10
+vim.opt.laststatus = 3
 
 vim.keymap.set("i", "<C-H>", "<C-w>")
 vim.keymap.set("i", "<C-BS>", "<C-w>")
@@ -24,8 +25,9 @@ vim.keymap.set("n", "<S-Down>", ":wincmd j<CR>")
 vim.keymap.set("n", "<S-Left>", ":wincmd h<CR>")
 vim.keymap.set("n", "<S-Right>", ":wincmd l<CR>")
 
+vim.keymap.set("n", "<C-enter>", ":Themery<CR>")
+
 vim.keymap.set("n", "<C-#>", ":TermSelect<CR>")
-vim.keymap.set("n", "<C-enter>", ":ToggleTermToggleAll<CR>")
 vim.keymap.set("n", "<C-r>", ":ToggleTermSetName<CR>")
 vim.keymap.set("n", "<C-1>", ":ToggleTerm 1 name='Terminal 1'<CR>")
 vim.keymap.set("n", "<C-2>", ":ToggleTerm 2 name='Terminal 2'<CR>")
