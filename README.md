@@ -9,6 +9,7 @@ A custom Neovim config
 - Some Nerd-Font
 - [tmux](https://github.com/tmux/tmux)
 - [ImageMagick](https://github.com/ImageMagick/ImageMagick)
+- [Tree-sitter CLI](https://www.npmjs.com/package/tree-sitter-cli)
 
 ## Installation
 
