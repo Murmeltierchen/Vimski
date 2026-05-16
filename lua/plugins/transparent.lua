@@ -6,6 +6,7 @@ return {
 			extra_groups = {
 				"CursorLine",
 				"FloatBorder",
+				"FloatTitle",
 				"NormalFloat",
 				"VertSplit",
 				"WinSeparator",
