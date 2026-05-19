@@ -26,7 +26,9 @@ Default bind for `Leader`: `Space`
 
 ### Single Keys
 
-- `Esc` in terminal - Exit terminal mode
+- `Esc`
+    - [n] Exit git diffview
+    - [t] Exit terminal mode
 - `K` - Show hover menu
 
 ### Using Shift
@@ -60,6 +62,9 @@ Default bind for `Leader`: `Space`
 
 - `Ctrl + Shift + <Up/Down>` - Move line up/down
 - `Ctrl + Shift + <p/n>` - Open previous/next harpoon file
+- `Ctrl + Shift + d` - Open git diff
+- `Ctrl + Shift + f` - Open git file history
+- `Ctrl + Shift + h` - Open git history
 
 ### Using Leader
 
