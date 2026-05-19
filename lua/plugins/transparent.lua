@@ -7,7 +7,11 @@ return {
 				"CursorLine",
 				"FloatBorder",
 				"FloatTitle",
+				"FoldColumn",
+				"Folded",
 				"NormalFloat",
+				"TabLine",
+				"TabLineFill",
 				"VertSplit",
 				"WinSeparator",
 
@@ -25,7 +29,6 @@ return {
 				"BlinkCmpSignatureHelp",
 				"BlinkCmpSignatureHelpBorder",
 			},
-			vim.keymap.set("n", "<C-b>", ":TransparentToggle<CR>", {}),
 		})
 	end,
 }

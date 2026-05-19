@@ -10,6 +10,7 @@ A custom Neovim config
 - [tmux](https://github.com/tmux/tmux)
 - [ImageMagick](https://github.com/ImageMagick/ImageMagick)
 - [Tree-sitter CLI](https://www.npmjs.com/package/tree-sitter-cli)
+- [Go](https://go.dev/)
 
 ## Installation
 
@@ -27,8 +28,8 @@ Default bind for `Leader`: `Space`
 ### Single Keys
 
 - `Esc`
-    - [n] Exit git diffview
-    - [t] Exit terminal mode
+    - `[n]` Exit git diffview
+    - `[t]` Exit terminal mode
 - `K` - Show hover menu
 
 ### Using Shift

@@ -26,6 +26,7 @@ vim.keymap.set("n", "<S-Left>", ":wincmd h<CR>")
 vim.keymap.set("n", "<S-Right>", ":wincmd l<CR>")
 
 vim.keymap.set("n", "<C-enter>", ":Themery<CR>")
+vim.keymap.set("n", "<C-b>", ":TransparentToggle<CR>")
 
 vim.keymap.set("n", "<C-#>", ":TermSelect<CR>")
 vim.keymap.set("n", "<C-r>", ":ToggleTermSetName<CR>")
