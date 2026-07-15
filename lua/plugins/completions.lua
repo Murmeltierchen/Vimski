@@ -1,47 +1,48 @@
 return {
-    {
-        "L3MON4D3/LuaSnip",
-        dependencies = {
-            "rafamadriz/friendly-snippets",
-        },
-    },
-    {
-        "saghen/blink.cmp",
-        version = "*",
-        dependencies = {
-            {
-                "L3MON4D3/LuaSnip",
-                config = function()
-                    require("luasnip.loaders.from_vscode").lazy_load()
-                end,
-            },
-        },
-        opts = {
-            keymap = {
-                preset = "super-tab"
-            },
-            snippets = {
-                preset = "luasnip",
-            },
-            completion = {
-                menu = {
-                    border = "rounded",
-                },
-                documentation = {
-                    auto_show = true,
-                    auto_show_delay_ms = 200,
-                    window = {
-                        border = "single",
-                    },
-                },
-            },
-            sources = {
-                default = { "lsp", "snippets", "buffer" },
-            },
-            appearance = {
-                use_nvim_cmp_as_default = true,
-                nerd_font_variant = "mono",
-            },
-        },
-    }
+	{
+		"L3MON4D3/LuaSnip",
+		dependencies = {
+			"rafamadriz/friendly-snippets",
+		},
+	},
+	{
+		"saghen/blink.cmp",
+		version = "*",
+		dependencies = {
+			{
+				"L3MON4D3/LuaSnip",
+				config = function()
+					require("luasnip.loaders.from_vscode").lazy_load()
+				end,
+			},
+		},
+		opts = {
+			keymap = {
+				preset = "super-tab",
+				["<Esc>"] = { "hide", "fallback" },
+			},
+			snippets = {
+				preset = "luasnip",
+			},
+			completion = {
+				menu = {
+					border = "rounded",
+				},
+				documentation = {
+					auto_show = true,
+					auto_show_delay_ms = 200,
+					window = {
+						border = "single",
+					},
+				},
+			},
+			sources = {
+				default = { "lsp", "snippets", "buffer" },
+			},
+			appearance = {
+				use_nvim_cmp_as_default = true,
+				nerd_font_variant = "mono",
+			},
+		},
+	},
 }

@@ -30,6 +30,7 @@ Default bind for `Leader`: `Space`
 - `Esc`
     - `[n]` Exit git diffview
     - `[t]` Exit terminal mode
+    - `Open suggestion window` Close suggestion window
 - `K` - Show hover menu
 
 ### Using Shift
