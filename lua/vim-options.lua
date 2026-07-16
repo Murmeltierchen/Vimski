@@ -5,6 +5,7 @@ vim.cmd("set shiftwidth=4")
 vim.g.mapleader = " "
 vim.g.background = "dark"
 
+vim.opt.autoread = true
 vim.opt.swapfile = false
 vim.opt.number = true
 vim.opt.scrolloff = 10
@@ -50,6 +51,8 @@ vim.keymap.set({ "n", "i", "v" }, "<C-,>", ":CodeCompanionCLI<CR>")
 vim.keymap.set({ "n", "i", "v" }, "<C-a>", function()
 	return require("codecompanion").cli("#{this}", { focus = false })
 end)
+
+vim.keymap.set("n", "<F5>", ":checktime<CR>")
 
 vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit Terminal Mode" })
 

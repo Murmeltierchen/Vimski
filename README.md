@@ -31,6 +31,7 @@ Default bind for `Leader`: `Space`
     - `[n]` Exit git diffview
     - `[t]` Exit terminal mode
     - `Open suggestion window` Close suggestion window
+- `F5` - Check file for changes
 - `K` - Show hover menu
 
 ### Using Shift
