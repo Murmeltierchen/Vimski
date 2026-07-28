@@ -20,6 +20,8 @@ vim.keymap.set("n", "<C-S-Up>", ":m -2<CR>")
 vim.keymap.set("n", "<C-S-Down>", ":m +1<CR>")
 vim.keymap.set("i", "<S-Tab>", "<C-d>")
 vim.keymap.set("i", "<C-Tab>", "<C-t>")
+vim.keymap.set("n", "<C-_>", "gcc", { remap = true })
+vim.keymap.set("v", "<C-_>", "gc", { remap = true })
 
 vim.keymap.set({ "n", "v" }, "<C-Up>", "10k")
 vim.keymap.set({ "n", "v" }, "<C-Down>", "10j")
