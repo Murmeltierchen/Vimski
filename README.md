@@ -38,6 +38,7 @@ Default bind for `Leader`: `Space`
 
 - `Shift + <Up/Down/Left/Right>` - Switch window
 - `Shift + Tab` - Dedent current line
+- `Shift + F5` - Restart language server
 
 ### Using Ctrl
 

@@ -57,6 +57,7 @@ vim.keymap.set({ "n", "i", "v" }, "<C-a>", function()
 end)
 
 vim.keymap.set("n", "<F5>", ":checktime<CR>")
+vim.keymap.set("n", "<S-F5>", ":lsp restart<CR>")
 
 vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit Terminal Mode" })
 
