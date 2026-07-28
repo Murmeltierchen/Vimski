@@ -64,6 +64,7 @@ Default bind for `Leader`: `Space`
 ### Using Shift and Ctrl
 
 - `Ctrl + Shift + <Up/Down>` - Move line up/down
+- `Ctrl + Shift + 7` - Comment current line / visual selection
 - `Ctrl + Shift + <p/n>` - Open previous/next harpoon file
 - `Ctrl + Shift + d` - Open git diff
 - `Ctrl + Shift + f` - Open git file history
