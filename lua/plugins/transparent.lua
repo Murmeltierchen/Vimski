@@ -4,7 +4,6 @@ return {
 	config = function()
 		require("transparent").setup({
 			extra_groups = {
-				"CursorLine",
 				"FloatBorder",
 				"FloatTitle",
 				"FoldColumn",
@@ -15,7 +14,6 @@ return {
 				"VertSplit",
 				"WinSeparator",
 
-				"NeoTreeCursorLine",
 				"NeoTreeEndOfBuffer",
 				"NeoTreeIndentMarker",
 				"NeoTreeNormal",
@@ -28,6 +26,9 @@ return {
 				"BlinkCmpMenuBorder",
 				"BlinkCmpSignatureHelp",
 				"BlinkCmpSignatureHelpBorder",
+			},
+			exclude_groups = {
+				"CursorLine",
 			},
 		})
 	end,
