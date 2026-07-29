@@ -11,7 +11,7 @@ vim.opt.number = true
 vim.opt.scrolloff = 10
 vim.opt.laststatus = 3
 vim.opt.list = true
-vim.opt.listchars = { tab = "  " }
+vim.opt.listchars = { tab = "▏ " }
 
 vim.keymap.set("i", "<C-H>", "<C-w>")
 vim.keymap.set("i", "<C-BS>", "<C-w>")
