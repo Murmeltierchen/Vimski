@@ -47,6 +47,8 @@ return {
 			vim.lsp.config("ts_ls", { capabilities = capabilities })
 			vim.lsp.config("intelephense", {
 				capabilities = capabilities,
+				root_dir = vim.fn.getcwd(),
+
 				settings = {
 					intelephense = {
 						stubs = {
