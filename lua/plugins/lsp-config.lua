@@ -40,6 +40,7 @@ return {
 		lazy = false,
 		config = function()
 			local capabilities = require("blink.cmp").get_lsp_capabilities()
+			local ok, intelephenseKey = pcall(require, "secrets.intelephense-licence")
 
 			vim.lsp.config("gopls", { capabilities = capabilities })
 			vim.lsp.config("html", { capabilities = capabilities })
@@ -48,6 +49,10 @@ return {
 			vim.lsp.config("intelephense", {
 				capabilities = capabilities,
 				root_dir = vim.fn.getcwd(),
+
+				init_options = {
+					licenceKey = ok and intelephenseKey or nil,
+				},
 
 				settings = {
 					intelephense = {

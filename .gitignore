@@ -1,3 +1,5 @@
 .luarc.json
 .swp
 lazy-lock.json
+
+lua/secrets/
