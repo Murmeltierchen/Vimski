@@ -143,6 +143,39 @@ return {
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "<leader>d", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "<leader>r", vim.lsp.buf.references, {})
+
+			vim.keymap.set("n", "<leader>pd", vim.lsp.buf.declaration, { desc = "Go to Declaration" })
+			vim.keymap.set("n", "<leader>pt", vim.lsp.buf.type_definition, { desc = "Go to Type Definition" })
+			vim.keymap.set("n", "<leader>pi", vim.lsp.buf.implementation, { desc = "Go to Implementation" })
+			vim.keymap.set("n", "<leader>pr", vim.lsp.buf.rename, { desc = "Rename (Intelephense Premium)" })
+			vim.keymap.set({ "n", "v" }, "<leader>pa", vim.lsp.buf.code_action, { desc = "Code Actions" })
+
+			vim.api.nvim_set_hl(0, "LspInlayHint", {
+				fg = "#5e6c79",
+				bg = "NONE",
+				italic = true,
+			})
+			vim.api.nvim_create_autocmd("LspAttach", {
+				callback = function(event)
+					local client = vim.lsp.get_client_by_id(event.data.client_id)
+					if client and client.server_capabilities.inlayHintProvider then
+						vim.lsp.inlay_hint.enable(true, { bufnr = event.buf })
+						vim.keymap.set("n", "<leader>ph", function()
+							local current_state = vim.lsp.inlay_hint.is_enabled({ bufnr = 0 })
+							vim.lsp.inlay_hint.enable(not current_state, { bufnr = 0 })
+						end, { buffer = event.buf })
+					end
+				end,
+			})
+			vim.keymap.set("n", "<leader>ph", function()
+				vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+			end)
+
+			vim.opt.foldmethod = "expr"
+			vim.opt.foldexpr = "v:lua.vim.lsp.foldexpr()"
+			vim.opt.foldlevel = 99
+			vim.opt.foldlevelstart = 99
+			vim.keymap.set("n", "<CR>", "za")
 		end,
 	},
 }

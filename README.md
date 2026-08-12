@@ -81,6 +81,12 @@ Default bind for `Leader`: `Space`
 - `Leader -> h` - Show hovered git changes
 - `Leader -> ha` - Show all git changes
 - `Leader -> n` - Hide marking after search
+- `Leader -> pa` - Show code actions
+- `Leader -> pd` - Go to declaration
+- `Leader -> ph` - Toggle inlay hints
+- `Leader -> pi` - Go to implementation
+- `Leader -> pr` - Rename (Intelephense Premium)
+- `Leader -> pt` - Go to type definition
 - `Leader -> r` - Show references
 - `Leader -> t` - Test file
 - `Leader -> ta` - Test all files
