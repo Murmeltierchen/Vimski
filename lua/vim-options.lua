@@ -46,10 +46,9 @@ vim.keymap.set("n", "<C-8>", ":ToggleTerm 8 name='Terminal 8'<CR>")
 vim.keymap.set("n", "<C-9>", ":ToggleTerm 9 name='Terminal 9'<CR>")
 vim.keymap.set("n", "<C-0>", ":ToggleTerm 10 name='Terminal 10'<CR>")
 
-vim.keymap.set("n", "<C-S-d>", ":DiffviewOpen<CR>")
-vim.keymap.set("n", "<C-S-h>", ":DiffviewFileHistory<CR>")
-vim.keymap.set("n", "<C-S-f>", ":DiffviewFileHistory %<CR>")
-vim.keymap.set("n", "<Esc>", ":DiffviewClose<CR>")
+vim.keymap.set("n", "<C-S-i>", ":CodeDiff ")
+vim.keymap.set("n", "<C-S-d>", ":CodeDiff<CR>")
+vim.keymap.set("n", "<C-S-h>", ":CodeDiff history<CR>")
 
 vim.keymap.set({ "n", "i", "v" }, "<C-,>", ":CodeCompanionCLI<CR>")
 vim.keymap.set({ "n", "i", "v" }, "<C-a>", function()

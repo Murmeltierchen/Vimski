@@ -13,14 +13,32 @@ return {
 		end,
 	},
 	{
-		"dlyongemallo/diffview.nvim",
-		version = "*",
-		cmd = {
-			"DiffviewOpen",
-			"DiffviewToggle",
-			"DiffviewFileHistory",
-			"DiffviewDiffFiles",
-			"DiffviewLog",
+		"esmuellert/codediff.nvim",
+		cmd = "CodeDiff",
+		opts = {
+			highlights = {
+				line_insert = "#1F4068",
+				line_delete = "#590505",
+			},
+			diff = {
+				compute_moves = false,
+			},
+			explorer = {
+				icons = {
+					folder_closed = "",
+					folder_open = "",
+				},
+				view_mode = "tree",
+				flatten_dirs = false,
+				file_filter = {
+					ignore = { ".git/**", "vendor/", "*.lock" },
+				},
+			},
+			keymaps = {
+				view = {
+					quit = "<Esc>",
+				},
+			},
 		},
 	},
 }
