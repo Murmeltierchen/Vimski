@@ -21,6 +21,13 @@ git clone --depth 1 git@github.com:Murmeltierchen/vimski.git ~/.config/nvim
 nvim
 ```
 
+## Custom Commands
+
+- Toggle formatting on save (default: on)
+    - `:FormatEnable` - Enable formatting on save
+    - `:FormatDisable` - Disable formatting on save for current file
+    - `:FormatDisable!` - Disable formatting on save globally
+
 ## Custom Keybinds
 
 Default bind for `Leader`: `Space`
@@ -28,9 +35,9 @@ Default bind for `Leader`: `Space`
 ### Single Keys
 
 - `Esc`
-    - `[n]` Exit git diffview
+    - `[n]` Exit git view
     - `[t]` Exit terminal mode
-    - `Open suggestion window` Close suggestion window
+    - `[i]` Close suggestions window
 - `F5` - Check file for changes
 - `K` - Show hover menu
 
@@ -67,9 +74,9 @@ Default bind for `Leader`: `Space`
 - `Ctrl + Shift + <Up/Down>` - Move line up/down
 - `Ctrl + Shift + 7` - Comment current line / visual selection
 - `Ctrl + Shift + <p/n>` - Open previous/next harpoon file
-- `Ctrl + Shift + d` - Open git diff
-- `Ctrl + Shift + f` - Open git file history
+- `Ctrl + Shift + d` - Open git file diff
 - `Ctrl + Shift + h` - Open git history
+- `Ctrl + Shift + i` - Open input for git diff
 
 ### Using Leader
 
